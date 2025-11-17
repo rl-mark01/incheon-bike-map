@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_cf9892b9fd2669e77ef87581a7bd71fc {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_cf9892b9fd2669e77ef87581a7bd71fc" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_cf9892b9fd2669e77ef87581a7bd71fc = L.map(
+                "map_cf9892b9fd2669e77ef87581a7bd71fc",
+                {
+                    center: [37.45, 126.69],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_5d83c21841f456047db8f77680c24903 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_5d83c21841f456047db8f77680c24903.addTo(map_cf9892b9fd2669e77ef87581a7bd71fc);
+        
+    
+            var feature_group_1d2f901d77cb45e1b7de0d6be7cc534f = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_cluster_eb9d1e2adc631accfaa1af76a15b2fb8 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_ad6a71a82cba0c2ce83dbf9ff926d8cc = L.marker(
+                [37.46149, 126.66539],
+                {
+}
+            ).addTo(marker_cluster_eb9d1e2adc631accfaa1af76a15b2fb8);
+        
+    
+            var icon_6e49d774df7b7b0fa7136483007c0cd3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bicycle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_28fe7c6f99c86f87eb141adb6fc0e506 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7fc4116eef9d502c52af5e3cf6e50f57 = $(`<div id="html_7fc4116eef9d502c52af5e3cf6e50f57" style="width: 100.0%; height: 100.0%;">재물포역 #1</div>`)[0];
+                popup_28fe7c6f99c86f87eb141adb6fc0e506.setContent(html_7fc4116eef9d502c52af5e3cf6e50f57);
+            
+        
+
+        marker_ad6a71a82cba0c2ce83dbf9ff926d8cc.bindPopup(popup_28fe7c6f99c86f87eb141adb6fc0e506)
+        ;
+
+        
+    
+    
+                marker_ad6a71a82cba0c2ce83dbf9ff926d8cc.setIcon(icon_6e49d774df7b7b0fa7136483007c0cd3);
+            
+    
+            var marker_137ac71e4348ac1b683c351375f2f679 = L.marker(
+                [37.45389, 126.65788],
+                {
+}
+            ).addTo(marker_cluster_eb9d1e2adc631accfaa1af76a15b2fb8);
+        
+    
+            var icon_ec2b00dbf644bd60833c1d1eda8b336a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bicycle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_59c83018f2bc8e0c43f723a3c227e490 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_26d84426235053d6ee7b239d95929582 = $(`<div id="html_26d84426235053d6ee7b239d95929582" style="width: 100.0%; height: 100.0%;">재물포역 #2</div>`)[0];
+                popup_59c83018f2bc8e0c43f723a3c227e490.setContent(html_26d84426235053d6ee7b239d95929582);
+            
+        
+
+        marker_137ac71e4348ac1b683c351375f2f679.bindPopup(popup_59c83018f2bc8e0c43f723a3c227e490)
+        ;
+
+        
+    
+    
+                marker_137ac71e4348ac1b683c351375f2f679.setIcon(icon_ec2b00dbf644bd60833c1d1eda8b336a);
+            
+    
+            marker_cluster_eb9d1e2adc631accfaa1af76a15b2fb8.addTo(feature_group_1d2f901d77cb45e1b7de0d6be7cc534f);
+        
+    
+            feature_group_1d2f901d77cb45e1b7de0d6be7cc534f.addTo(map_cf9892b9fd2669e77ef87581a7bd71fc);
+        
+    
+            var feature_group_ad5f368d1ad2f9d0172ca8783c2915b9 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_cluster_547139496518caca1d1f945fb5c2261c = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_dd9417a8095d86d1f37538ca727492ae = L.marker(
+                [37.52595, 126.72656],
+                {
+}
+            ).addTo(marker_cluster_547139496518caca1d1f945fb5c2261c);
+        
+    
+            var icon_f7df3bf8823be39635e06bf47bf98808 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "bicycle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5313bc49e3598659f5e4bf4da4622f0d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_80caa6e007fe7332f923624295df4dde = $(`<div id="html_80caa6e007fe7332f923624295df4dde" style="width: 100.0%; height: 100.0%;">작전역 #1</div>`)[0];
+                popup_5313bc49e3598659f5e4bf4da4622f0d.setContent(html_80caa6e007fe7332f923624295df4dde);
+            
+        
+
+        marker_dd9417a8095d86d1f37538ca727492ae.bindPopup(popup_5313bc49e3598659f5e4bf4da4622f0d)
+        ;
+
+        
+    
+    
+                marker_dd9417a8095d86d1f37538ca727492ae.setIcon(icon_f7df3bf8823be39635e06bf47bf98808);
+            
+    
+            var marker_f000b99e4bd91a14743cac5c12c377b4 = L.marker(
+                [37.50727, 126.71609],
+                {
+}
+            ).addTo(marker_cluster_547139496518caca1d1f945fb5c2261c);
+        
+    
+            var icon_5febbef6c53930f8dd1967c610863bb0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "bicycle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ebebb997e0037d3315995cf17d1a2dd8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_79fc7530eb0c03ead760aa312898e19d = $(`<div id="html_79fc7530eb0c03ead760aa312898e19d" style="width: 100.0%; height: 100.0%;">부평구청역 #1</div>`)[0];
+                popup_ebebb997e0037d3315995cf17d1a2dd8.setContent(html_79fc7530eb0c03ead760aa312898e19d);
+            
+        
+
+        marker_f000b99e4bd91a14743cac5c12c377b4.bindPopup(popup_ebebb997e0037d3315995cf17d1a2dd8)
+        ;
+
+        
+    
+    
+                marker_f000b99e4bd91a14743cac5c12c377b4.setIcon(icon_5febbef6c53930f8dd1967c610863bb0);
+            
+    
+            marker_cluster_547139496518caca1d1f945fb5c2261c.addTo(feature_group_ad5f368d1ad2f9d0172ca8783c2915b9);
+        
+    
+            feature_group_ad5f368d1ad2f9d0172ca8783c2915b9.addTo(map_cf9892b9fd2669e77ef87581a7bd71fc);
+        
+    
+            var feature_group_fab5e6274462dd82484ba9ece8d6fc8e = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_cluster_030997dcb5585a16e8544a8e4ce51910 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_54c6f3e435fa3a4f2db418ef6308378e = L.marker(
+                [37.407368, 126.694854],
+                {
+}
+            ).addTo(marker_cluster_030997dcb5585a16e8544a8e4ce51910);
+        
+    
+            var icon_f698bc77bd04c1538484471c90f90893 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bicycle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2a32773c22a650c4c0593b9afd53333e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fddf501335b247b972273df129ce6aa2 = $(`<div id="html_fddf501335b247b972273df129ce6aa2" style="width: 100.0%; height: 100.0%;">남동인더스파크 #1</div>`)[0];
+                popup_2a32773c22a650c4c0593b9afd53333e.setContent(html_fddf501335b247b972273df129ce6aa2);
+            
+        
+
+        marker_54c6f3e435fa3a4f2db418ef6308378e.bindPopup(popup_2a32773c22a650c4c0593b9afd53333e)
+        ;
+
+        
+    
+    
+                marker_54c6f3e435fa3a4f2db418ef6308378e.setIcon(icon_f698bc77bd04c1538484471c90f90893);
+            
+    
+            var marker_7a1a48c1bf6b7747bb07317784a34a4e = L.marker(
+                [37.397597, 126.726391],
+                {
+}
+            ).addTo(marker_cluster_030997dcb5585a16e8544a8e4ce51910);
+        
+    
+            var icon_5ad507ad902039002849f637b292dfdf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bicycle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_23b3e20ea001978c230bb447c8864f9b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_78e790413af4b54b5a6dc07fcd169e40 = $(`<div id="html_78e790413af4b54b5a6dc07fcd169e40" style="width: 100.0%; height: 100.0%;">논현고잔동 #1</div>`)[0];
+                popup_23b3e20ea001978c230bb447c8864f9b.setContent(html_78e790413af4b54b5a6dc07fcd169e40);
+            
+        
+
+        marker_7a1a48c1bf6b7747bb07317784a34a4e.bindPopup(popup_23b3e20ea001978c230bb447c8864f9b)
+        ;
+
+        
+    
+    
+                marker_7a1a48c1bf6b7747bb07317784a34a4e.setIcon(icon_5ad507ad902039002849f637b292dfdf);
+            
+    
+            var marker_57575e2ced6a77dd5c2e6c513e7526e6 = L.marker(
+                [37.404214, 126.716411],
+                {
+}
+            ).addTo(marker_cluster_030997dcb5585a16e8544a8e4ce51910);
+        
+    
+            var icon_4d380f930bb75284fb77bf83a348078d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bicycle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a7cc74c502c6aeb1adcce4b6b2c277c8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2974856653070326fe3d1c47b6929834 = $(`<div id="html_2974856653070326fe3d1c47b6929834" style="width: 100.0%; height: 100.0%;">논현2동 #1</div>`)[0];
+                popup_a7cc74c502c6aeb1adcce4b6b2c277c8.setContent(html_2974856653070326fe3d1c47b6929834);
+            
+        
+
+        marker_57575e2ced6a77dd5c2e6c513e7526e6.bindPopup(popup_a7cc74c502c6aeb1adcce4b6b2c277c8)
+        ;
+
+        
+    
+    
+                marker_57575e2ced6a77dd5c2e6c513e7526e6.setIcon(icon_4d380f930bb75284fb77bf83a348078d);
+            
+    
+            marker_cluster_030997dcb5585a16e8544a8e4ce51910.addTo(feature_group_fab5e6274462dd82484ba9ece8d6fc8e);
+        
+    
+            feature_group_fab5e6274462dd82484ba9ece8d6fc8e.addTo(map_cf9892b9fd2669e77ef87581a7bd71fc);
+        
+    
+            var layer_control_35f4ef3484c1cc33a76674cca8bda831_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_5d83c21841f456047db8f77680c24903,
+                },
+                overlays :  {
+                    "\uac00\uc88c\uacf5\uc5c5\ub2e8\uc9c0" : feature_group_1d2f901d77cb45e1b7de0d6be7cc534f,
+                    "\ubd80\ud3c9\uacf5\ub2e8" : feature_group_ad5f368d1ad2f9d0172ca8783c2915b9,
+                    "\ub0a8\ub3d9\uad6d\uac00\uc0b0\uc5c5\ub2e8\uc9c0" : feature_group_fab5e6274462dd82484ba9ece8d6fc8e,
+                },
+            };
+            let layer_control_35f4ef3484c1cc33a76674cca8bda831 = L.control.layers(
+                layer_control_35f4ef3484c1cc33a76674cca8bda831_layers.base_layers,
+                layer_control_35f4ef3484c1cc33a76674cca8bda831_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_cf9892b9fd2669e77ef87581a7bd71fc);
+
+        
+</script>
+</html>
