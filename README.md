@@ -56,5 +56,5 @@ This analysis can support:
 - Extend analysis to other metropolitan regions
 
 ## mapping QR CODE
-<img width="730" height="730" alt="공업단지_자전거지도_QR" src="https://github.com/user-attachments/assets/77bb0ce4-e97d-4c97-9d6c-30c984f9b02d" />
+<img width="400" height="400" alt="공업단지_자전거지도_QR" src="https://github.com/user-attachments/assets/77bb0ce4-e97d-4c97-9d6c-30c984f9b02d" />
 
