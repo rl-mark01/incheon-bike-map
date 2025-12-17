@@ -38,7 +38,7 @@ This project addresses the question:
 - **Interactive Map (Result)**
   - `result_mapping.html`
 - **Analysis Notebook**
-  - main_code.ipynb`
+  - 'main_code.ipynb`
 - **Code-based Map Output**
   - `Industrial_Complex_bicycle_optimization_code.html`
 
