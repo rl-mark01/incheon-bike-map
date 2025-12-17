@@ -36,11 +36,11 @@ This project addresses the question:
 
 ## 🧩 Outputs
 - **Interactive Map (Result)**
-  - `공업단지전체_자전거_결과_지도.html`
+  - `result_mapping.html`
 - **Analysis Notebook**
-  - `공업단지전체_자전거_매핑 (1).ipynb`
+  - `Industrial_Complex_bicycle_optimization_code.ipynb`
 - **Code-based Map Output**
-  - `공업단지전체_자전거_매핑_코딩.html`
+  - `Industrial_Complex_bicycle_optimization_code.html`
 
 > 💡 Open the HTML files directly in a browser to explore the interactive maps.
 
